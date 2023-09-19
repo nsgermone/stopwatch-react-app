@@ -68,3 +68,66 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Test Cases for Stopwatch App:
+
+1. Start Stopwatch:
+   Objective: Verify that the stopwatch starts when the user taps the "Start" button.
+   Steps:
+   Open the app and go to the stopwatch screen.
+   Tap the "Start" button.
+   Expected Result: The stopwatch starts counting time.
+2. Pause Stopwatch:
+   Objective: Ensure that the stopwatch pauses when the user taps the "Pause" button.
+   Precondition: Stopwatch is running.
+   Steps:
+   Tap the "Pause" button.
+   Expected Result: The stopwatch pauses and stops counting time.
+3. Resume Stopwatch:
+   Objective: Confirm that the stopwatch resumes counting from where it was paused.
+   Precondition: Stopwatch is paused.
+   Steps:
+   Tap the "Resume" button.
+   Expected Result: The stopwatch resumes counting from the exact time it was paused.
+4. Stop Stopwatch:
+   Objective: Verify that the stopwatch stops and resets when the user taps the "Stop" button.
+   Precondition: Stopwatch is running or paused.
+   Steps:
+   Tap the "Stop" button.
+   Expected Result: The stopwatch stops and resets to zero.
+5. Record Lap Time:
+   Objective: Test the ability to record lap times during stopwatch operation.
+   Precondition: Stopwatch is running.
+   Steps:
+   Tap the "Lap" button at least twice at different time intervals.
+   Expected Result: Lap times are recorded and displayed on the screen.
+6. Reset Lap Times:
+   Objective: Check that the lap times can be reset.
+   Precondition: Stopwatch is running or paused, lap times recorded.
+   Steps:
+   Tap the "Reset Laps" button.
+   Expected Result: All recorded lap times are cleared.
+7. Check Precision:
+   Objective: Verify that the stopwatch accurately measures time.
+   Precondition: Stopwatch is running.
+   Steps:
+   Allow the stopwatch to run for a specific time (e.g., 10 seconds).
+   Expected Result: Stopwatch should measure the specific time accurately within an acceptable margin of error.
+8. UI Responsiveness:
+   Objective: Test the responsiveness of the UI during stopwatch operation.
+   Precondition: Stopwatch is running.
+   Steps:
+   Attempt to tap buttons (e.g., pause, lap) while the stopwatch is running.
+   Expected Result: The UI should respond quickly and accurately to user interactions.
+9. Exit and Relaunch:
+   Objective: Verify that the stopwatch continues to operate correctly even after exiting and relaunching the app.
+   Precondition: Stopwatch is running or paused.
+   Steps:
+   Start the stopwatch, then exit and relaunch the app.
+   Expected Result: Stopwatch should continue functioning correctly upon relaunch.
+10. Edge Case: Maximum Time:
+    Objective: Test the behavior of the stopwatch when it reaches the maximum time limit.
+    Precondition: Stopwatch is running.
+    Steps:
+    Allow the stopwatch to run for an extended period to reach the maximum time (e.g., several hours).
+    Expected Result: The stopwatch should handle the maximum time gracefully without any errors or crashes.
